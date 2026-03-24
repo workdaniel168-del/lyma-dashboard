@@ -6,7 +6,7 @@ const SHEET_ID   = "1hka-pv2KLyJjByIMpMaGFjJPKqdw3eM5nw_49yKx3Fg";
 const OWNER_PW   = "lyma2026";
 const ADMIN_PW   = "admin2026";
 const ALL_STAFF  = ["Edy", "Pak Man", "Bekuk", "Dika"];
-const SHIFTS     = { Edy:"06–14", "Pak Man":"20–06", Bekuk:"10–18", Dika:"13–20" };
+const SHIFTS     = { Edy:"06–14", "Pak Man":"20–06", Bekuk:"08–16", Dika:"12–20" };
 const POSISI     = { Edy:"Engineering", "Pak Man":"Security", Bekuk:"Gardening", Dika:"Gardening" };
 const AV_GRAD    = {
   Edy:     ["#00E896","#00A06A"],
