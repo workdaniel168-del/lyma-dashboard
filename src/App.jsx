@@ -297,7 +297,7 @@ export default function App() {
                   rows={ALL_STAFF.map(nama => {
                     const masuk = absenHari.find(r => r["Nama"] === nama);
                     const closing = closingHari.find(r => r["Nama"] === nama);
-                    const shifts = { Edy: "06–14", Bekuk: "10–18", Diki: "13–20", "Pak Man": "20–06" };
+                    const shifts = { Edy: "06-14", Bekuk: "10-18", Diki: "13-20", "Pak Man": "20-06" };
                     return [
                       nama,
                       shifts[nama] || "-",
@@ -385,7 +385,7 @@ export default function App() {
                 r["Durasi"] || "-",
                 `${r["Progress %"] || 0}%`,
                 <Badge text={kpiOK ? "Tercapai" : "Gagal"} color={kpiOK ? "green" : "red"} />,
-                String(r["Joblist"] || "-").substring(0, 60) + (String(r["Joblist"] || "").length > 60 ? "…" : ""),
+                String(r["Joblist"] || "-").substring(0, 60) + (String(r["Joblist"] || "").length > 60 ? "..." : ""),
               ];
               return [
                 r["Jam Masuk"] || "-",
@@ -428,7 +428,7 @@ export default function App() {
           />
           {inventaris.length > 50 && (
             <div style={{ fontSize: 12, color: "var(--color-text-secondary)", marginTop: 8, textAlign: "center" }}>
-              Menampilkan 50 dari {inventaris.length} item. Lihat semua di Master Sheet.
+              Menampilkan 50 dari {inventaris.length} item.
             </div>
           )}
         </div>
